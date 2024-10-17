@@ -10,11 +10,14 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -61,6 +64,12 @@ fun BasicLayout(modifier: Modifier = Modifier){
             style = TextStyle(color = Color.Red))
         Text(text = "20220140125",
             style = TextStyle(fontSize = 50.sp))
+        Image(painter = painterResource(
+            id = R.drawable.ichsan
+        ),
+            contentDescription = null,
+            modifier = Modifier.padding(top = 5.dp).size(250.dp).clip(CircleShape)
+        )
 
     }
 
