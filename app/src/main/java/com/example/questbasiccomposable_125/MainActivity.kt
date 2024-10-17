@@ -34,7 +34,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BasicLayout(modifier: Modifier = Modifier){
-    Column (
+    Column (horizontalAlignment = Alignment.CenterHorizontally,
+
     ){
 
     }
